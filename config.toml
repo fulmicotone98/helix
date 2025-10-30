@@ -1,0 +1,55 @@
+theme = "gruvbox_dark_hard"
+
+[editor]
+true-color = true
+line-number = "relative"
+rulers = [80]
+cursorline = true
+
+[editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+  "version-control"
+]
+right = [
+  "workspace-diagnostics",
+  "selections",
+  "register",
+  "position",
+  "total-line-numbers",
+  "file-encoding",
+  "file-type"
+]
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.auto-save]
+focus-lost = true
+after-delay.timeout = 3000
+
+[editor.lsp]
+enable = true
+auto-signature-help = true
+display-inlay-hints = true
+snippets = true
+display-signature-help-docs = true
+goto-reference-include-declaration = true
+
+# [editor.inline-diagnostics]
+# cursor-line = "enable"
+# prefix-len = 1
+# max-wrap = 20
+# max-diagnostics = 5
+
