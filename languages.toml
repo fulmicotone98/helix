@@ -207,6 +207,17 @@ inlayHints.closureReturnTypeHints.enable = "with_block"
 inlayHints.discriminantHints.enable = "fieldless"
 inlayHints.lifetimeElisionHints.enable = "skip_trivial"
 inlayHints.typeHints.hideClosureInitialization = false
+check = {command = "clippy", extraArgs = [
+ "--", 
+ "-W",
+ "clippy::unwrap_used", 
+ "-W", 
+ "clippy::expect_used",
+ "-W",
+ "clippy::pedantic",
+ "-W",
+ "clippy::nursery"
+]}
 
 [language-server.rust-analyzer.config.files]
 watcher = "server"
@@ -306,9 +317,6 @@ block-comment-tokens = [
 language-servers = [ "rust-analyzer" ]
 indent = { tab-width = 4, unit = "    " }
 persistent-diagnostic-sources = ["rustc", "clippy"]
-
-[language-server.rust-analyzer]
-check = { command = "clippy", extraArgs = ["--", "-W", "clippy::pedantic"] }
 
 [language.auto-pairs]
 '(' = ')'
