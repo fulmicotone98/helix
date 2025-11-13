@@ -37,7 +37,7 @@ select = "underline"
 
 [editor.auto-save]
 focus-lost = true
-after-delay.timeout = 3000
+after-delay.timeout = 1000
 
 [editor.lsp]
 enable = true
