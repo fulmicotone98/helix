@@ -3,7 +3,7 @@ theme = "custom_gruvbox_dark_hard"
 [editor]
 true-color = true
 line-number = "relative"
-rulers = [80]
+rulers = [100]
 cursorline = true
 
 [editor.statusline]

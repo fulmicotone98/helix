@@ -1,0 +1,9 @@
+# Inherit all settings from your base theme
+inherits = "gruvbox_dark_hard"
+
+# Override the comment color
+"comment" = { fg = "#d3869b", modifiers = ["italic"] }
+
+# Optional: Specialized comments
+# "comment.line" = { fg = "#fca30a" }
+# "comment.block" = { fg = "#fca30a" }
